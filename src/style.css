@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: #1a1a2e;
+  color: #eee;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#app {
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.field {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.field label {
+  display: block;
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-bottom: 0.4rem;
+}
+
+.field input[type="number"] {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  font-size: 1.2rem;
+  border: 2px solid #333;
+  border-radius: 12px;
+  background: #16213e;
+  color: #fff;
+  text-align: center;
+  -moz-appearance: textfield;
+}
+
+.field input[type="number"]::-webkit-inner-spin-button,
+.field input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.field input[type="range"] {
+  width: 100%;
+  height: 8px;
+  border-radius: 4px;
+  background: #333;
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.field input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #e94560;
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.buttons button {
+  flex: 1;
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.1s;
+}
+
+.buttons button:active {
+  transform: scale(0.95);
+}
+
+.buttons button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+#start-btn {
+  background: #0f3460;
+  color: #fff;
+}
+
+#stop-btn {
+  background: #e94560;
+  color: #fff;
+}
+
+#status {
+  font-size: 1rem;
+  color: #aaa;
+  margin-bottom: 0.5rem;
+}
+
+#status.running {
+  color: #4ecca3;
+}
+
+#countdown {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+  font-variant-numeric: tabular-nums;
+  min-height: 3.5rem;
+}
+
+#vibrate-indicator {
+  font-size: 1.2rem;
+  min-height: 1.8rem;
+  margin-top: 0.5rem;
+  color: #e94560;
+  font-weight: 600;
+}
